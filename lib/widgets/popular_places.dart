@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
-import '/blocs/popular_places_bloc.dart';
-import '/models/place.dart';
+import '../blocs/popular_places_bloc.dart';
+import '../models/place.dart';
 import 'package:provider/provider.dart';
-import '/pages/more_places.dart';
-import '/pages/place_details.dart';
-import '/core/utils/next_screen.dart';
-import '/widgets/custom_cache_image.dart';
-import '/core/utils/loading_cards.dart';
+import '../pages/more_places.dart';
+import '../pages/place_details.dart';
+import '../core/utils/next_screen.dart';
+import '../widgets/custom_cache_image.dart';
+import '../core/utils/loading_cards.dart';
 import 'package:easy_localization/easy_localization.dart';
 
 

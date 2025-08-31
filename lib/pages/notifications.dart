@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:html/parser.dart';
 import 'package:html_unescape/html_unescape.dart';
 import 'package:provider/provider.dart';
-import '/blocs/notification_bloc.dart';
-import '/models/notification.dart';
-import '/core/utils/next_screen.dart';
-import '/pages/notification_details.dart';
+import '../blocs/notification_bloc.dart';
+import '../models/notification.dart';
+import '../core/utils/next_screen.dart';
+import '../pages/notification_details.dart';
 import 'package:easy_localization/easy_localization.dart';
 
 class NotificationsPage extends StatefulWidget {

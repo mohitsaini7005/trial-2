@@ -160,7 +160,7 @@ class _ProfilePageState extends State<ProfilePage> {
             flexibleSpace: FlexibleSpaceBar(
               title: const Text('My Profile'),
               background: Image.asset(
-                'assets/images/profile_bg.jpg',
+                'assets/images/travel6.png',
                 fit: BoxFit.cover,
                 errorBuilder: (context, error, stackTrace) => Container(
                   color: AppColors.tribalPrimary,
@@ -292,7 +292,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                   const CircleAvatar(
                                     radius: 50,
                                     backgroundImage: AssetImage(
-                                        'assets/images/profile_placeholder.jpg'),
+                                        'assets/images/tb.png'),
                                   ),
                                   TextButton(
                                     onPressed: () async {
@@ -455,7 +455,7 @@ class _ProfilePageState extends State<ProfilePage> {
                               itemBuilder: (context, index) {
                                 return ListTile(
                                   leading: Image.asset(
-                                    'assets/images/product${index + 1}.jpg',
+                                    'assets/images/travel${(index % 6) + 1}.png',
                                     width: 50,
                                     height: 50,
                                     fit: BoxFit.cover,

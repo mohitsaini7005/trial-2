@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
-import '/core/config/config.dart';
+import '../core/config/config.dart';
 
 class LanguagePopup extends StatefulWidget {
   const LanguagePopup({ super.key });

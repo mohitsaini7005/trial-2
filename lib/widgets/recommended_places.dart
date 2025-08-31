@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '/blocs/recommanded_places_bloc.dart';
-import '/models/place.dart';
-import '/pages/more_places.dart';
-import '/pages/place_details.dart';
-import '/core/utils/next_screen.dart';
-import '/widgets/custom_cache_image.dart';
+import '../blocs/recommanded_places_bloc.dart';
+import '../models/place.dart';
+import '../pages/more_places.dart';
+import '../pages/place_details.dart';
+import '../core/utils/next_screen.dart';
+import '../widgets/custom_cache_image.dart';
 import 'package:easy_localization/easy_localization.dart';
 
 class RecommendedPlaces extends StatelessWidget {

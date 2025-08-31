@@ -4,14 +4,14 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:provider/provider.dart';
-import '/blocs/comments_bloc.dart';
-import '/blocs/internet_bloc.dart';
-import '/blocs/sign_in_bloc.dart';
-import '/models/comment.dart';
-import '/core/utils/empty.dart';
-import '/core/utils/loading_cards.dart';
-import '/core/utils/sign_in_dialog.dart';
-//import '/core/utils/toast.dart';
+import '../blocs/comments_bloc.dart';
+import '../blocs/internet_bloc.dart';
+import '../blocs/sign_in_bloc.dart';
+import '../models/comment.dart';
+import '../core/utils/empty.dart';
+import '../core/utils/loading_cards.dart';
+import '../core/utils/sign_in_dialog.dart';
+//import '../core/utils/toast.dart';
 import 'package:easy_localization/easy_localization.dart';
 
 class CommentsPage extends StatefulWidget {

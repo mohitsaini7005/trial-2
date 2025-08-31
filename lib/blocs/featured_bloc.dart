@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
-import '/models/place.dart';
+import '../models/place.dart';
 
 class FeaturedBloc with ChangeNotifier {
 

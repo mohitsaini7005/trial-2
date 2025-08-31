@@ -119,7 +119,7 @@ class _BlogsPageState extends State<BlogsPage> {
       'author': 'Travel Enthusiast',
       'date': 'May 15, 2023',
       'readTime': '5 min read',
-      'image': 'assets/images/blog1.jpg',
+      'image': 'assets/images/travel1.png',
       'content': 'Discover the hidden gems of Araku Valley and its rich tribal culture...',
     },
     {
@@ -127,7 +127,7 @@ class _BlogsPageState extends State<BlogsPage> {
       'author': 'Food Explorer',
       'date': 'April 28, 2023',
       'readTime': '4 min read',
-      'image': 'assets/images/blog2.jpg',
+      'image': 'assets/images/travel2.png',
       'content': 'A culinary journey through the unique flavors of tribal cooking...',
     },
     {
@@ -135,7 +135,7 @@ class _BlogsPageState extends State<BlogsPage> {
       'author': 'Art & Culture',
       'date': 'April 10, 2023',
       'readTime': '6 min read',
-      'image': 'assets/images/blog3.jpg',
+      'image': 'assets/images/travel4.png',
       'content': 'Exploring the intricate world of tribal art and craftsmanship...',
     },
   ];

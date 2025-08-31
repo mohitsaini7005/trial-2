@@ -1,9 +1,9 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:lali/pages/home.dart';
-import '/core/config/config.dart';
-import '/core/utils/next_screen.dart';
-//import '/pages/home.dart';
+import '../core/config/config.dart';
+import '../core/utils/next_screen.dart';
+//import '../pages/home.dart';
 import 'package:easy_localization/easy_localization.dart';
 
 class IntroPage extends StatefulWidget {

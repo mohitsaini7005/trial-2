@@ -90,21 +90,21 @@ class TribalStaysPage extends StatelessWidget {
         'location': 'Araku Valley',
         'price': '₹1500/night',
         'rating': 4.5,
-        'image': 'assets/images/araku_stay.jpg',
+        'image': 'assets/images/travel5.png',
       },
       {
         'title': 'Bastar Tribal Village',
         'location': 'Bastar',
         'price': '₹1200/night',
         'rating': 4.2,
-        'image': 'assets/images/bastar_stay.jpg',
+        'image': 'assets/images/travel6.png',
       },
       {
         'title': 'Dandakaranya Cottages',
         'location': 'Dandakaranya',
         'price': '₹1800/night',
         'rating': 4.7,
-        'image': 'assets/images/dandakaranya_stay.jpg',
+        'image': 'assets/images/travel1.png',
       },
     ];
 

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
-import '/models/place.dart';
-import '/pages/place_details.dart';
-import '/core/utils/next_screen.dart';
-import '/widgets/custom_cache_image.dart';
+import '../models/place.dart';
+import '../pages/place_details.dart';
+import '../core/utils/next_screen.dart';
+import '../widgets/custom_cache_image.dart';
 
 class ListCard extends StatelessWidget {
   final Place d;

@@ -1,11 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '/blocs/search_bloc.dart';
-import '/core/utils/empty.dart';
-import '/core/utils/list_card.dart';
-import '/core/utils/loading_cards.dart';
-import '/core/utils/snacbar.dart';
+import '../blocs/search_bloc.dart';
+import '../core/utils/empty.dart';
+import '../core/utils/list_card.dart';
+import '../core/utils/loading_cards.dart';
+import '../core/utils/snacbar.dart';
 import 'package:easy_localization/easy_localization.dart';
 
 class SearchPage extends StatefulWidget {

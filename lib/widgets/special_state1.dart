@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import '/blocs/sp_state_one.dart';
-import '/models/colors.dart';
-import '/core/config/config.dart';
+import '../blocs/sp_state_one.dart';
+import '../models/colors.dart';
+import '../core/config/config.dart';
 import 'package:provider/provider.dart';
-import '/pages/state_based_places.dart';
-import '/core/utils/list_card.dart';
-import '/core/utils/next_screen.dart';
+import '../pages/state_based_places.dart';
+import '../core/utils/list_card.dart';
+import '../core/utils/next_screen.dart';
 import 'package:easy_localization/easy_localization.dart';
 
 class SpecialStateOne extends StatelessWidget {

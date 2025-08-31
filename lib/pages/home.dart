@@ -1,11 +1,11 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import '/blocs/notification_bloc.dart';
-import '/pages/blogs.dart';
-import '/pages/bookmark.dart';
-import '/pages/explore.dart';
-import '/pages/profile.dart';
-import '/pages/states.dart';
+import '../blocs/notification_bloc.dart';
+import '../pages/blogs.dart';
+import '../pages/bookmark.dart';
+import '../pages/explore.dart';
+import '../pages/profile.dart';
+import '../pages/states.dart';
 import 'package:provider/provider.dart';
 
 class HomePage extends StatefulWidget {
