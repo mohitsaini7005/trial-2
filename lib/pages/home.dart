@@ -9,6 +9,7 @@ import '/pages/profile.dart';
 import '/pages/states.dart';
 import '/pages/marketplace/marketplace_page.dart';
 import '/pages/social/social_feed_page.dart';
+import '/pages/trips/trips_booking_page.dart';
 import 'package:provider/provider.dart';
 import 'package:lali/core/constants/colors.dart';
 
@@ -29,15 +30,15 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
     Icons.explore,        // Discover/Explore
     Icons.video_library,  // Social Feed/Stories  
     Icons.shopping_bag,   // Marketplace
-    Icons.event,         // Events/Bookings
-    Icons.person,        // Profile
+    Icons.hiking,         // Trips/Adventures
+    Icons.person,         // Profile
   ];
 
   List<String> tabLabels = [
     'Explore',
     'Stories', 
     'Market',
-    'Events',
+    'Trips',
     'Profile',
   ];
 
@@ -184,7 +185,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
           Explore(),              // Enhanced discovery page
           SocialFeedPage(),       // New social feed with stories/reels
           MarketplacePage(),      // Enhanced marketplace
-          BlogPage(),             // Events & bookings (repurposed)
+          TripsBookingPage(),     // Enhanced trips and bookings
           ProfilePage(),          // Enhanced profile
         ],
       ),
