@@ -31,6 +31,7 @@ import 'package:provider/provider.dart';
 import 'package:lali/core/theme/app_theme.dart';
 import 'package:lali/core/services/consent_prefs.dart';
 import 'package:lali/core/config/app_config.dart';
+import 'package:lali/core/constants/colors.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 //import 'package:lali/widgets/other_places.dart';
 
@@ -172,9 +173,9 @@ class _MyAppState extends State<MyApp> {
         localizationsDelegates: context.localizationDelegates,
         locale: context.locale,
         debugShowCheckedModeBanner: false,
-        title: AppConfig.env == 'prod' ? 'Lali' : 'Lali (${AppConfig.env})',
-        theme: AppTheme.themeLight(seed: Colors.teal),
-        darkTheme: AppTheme.themeDark(seed: Colors.teal),
+        title: AppConfig.env == 'prod' ? AppConfig.appName : '${AppConfig.appName} (${AppConfig.env})',
+        theme: AppTheme.themeLight(seed: AppColors.tribalPrimary),
+        darkTheme: AppTheme.themeDark(seed: AppColors.tribalPrimary),
         initialRoute: AppRoutes.home,
         getPages: AppRoutes.pages,
         initialBinding: InitialBindings(),
