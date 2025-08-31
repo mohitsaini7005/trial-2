@@ -5,7 +5,7 @@ import '../blocs/search_bloc.dart';
 import '../core/utils/empty.dart';
 import '../core/utils/list_card.dart';
 import '../core/utils/loading_cards.dart';
-import '../core/utils/snacbar.dart';
+import '../core/utils/snackbar.dart';
 import 'package:easy_localization/easy_localization.dart';
 
 class SearchPage extends StatefulWidget {
@@ -87,7 +87,7 @@ class _SearchPageState extends State<SearchPage> {
                 textInputAction: TextInputAction.search,
                 onFieldSubmitted: (value) {
                   if(value == ''){
-                    openSnacbar(scaffoldKey, 'Type something!');
+                    openSnackbar(context, 'Type something!');
                   }else{
                     context.read<SearchBloc>().setSearchText(value);
                     context.read<SearchBloc>().addToSearchList(value);
