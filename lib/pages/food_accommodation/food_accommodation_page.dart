@@ -13,21 +13,21 @@ class FoodAccommodationPage extends StatelessWidget {
         'description': 'Authentic tribal cuisine with local ingredients',
         'price': '₹250',
         'rating': 4.7,
-        'image': 'assets/images/food1.jpg',
+        'image': 'assets/images/travel1.png',
       },
       {
         'title': 'Bamboo Chicken',
         'description': 'Chicken cooked in bamboo with tribal spices',
         'price': '₹350',
         'rating': 4.5,
-        'image': 'assets/images/food2.jpg',
+        'image': 'assets/images/travel2.png',
       },
       {
         'title': 'Millet Dosa',
         'description': 'Healthy millet dosa with chutney',
         'price': '₹150',
         'rating': 4.3,
-        'image': 'assets/images/food3.jpg',
+        'image': 'assets/images/travel4.png',
       },
     ];
 

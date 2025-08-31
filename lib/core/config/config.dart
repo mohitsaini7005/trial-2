@@ -1,7 +1,7 @@
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 class Config {
-  final String appName = 'lali';
+  final String appName = 'Lali - Tribal Tourism';
   final String mapAPIKey = 'AIzaSyA-fE7BtlehhXxsO_sWnHpayW**********';
   final String countryName = 'India';
   final String splashIcon = 'assets/images/tb.png';
@@ -10,8 +10,8 @@ class Config {
   final String ourWebsiteUrl = 'https://lali.com';
   final String iOSAppId = '000000000';
 
-  final String specialState1 = 'Sylhet';
-  final String specialState2 = 'Chittagong';
+  final String specialState1 = 'Chhattisgarh';
+  final String specialState2 = 'Jharkhand';
 
   
 
@@ -39,10 +39,15 @@ class Config {
 
   
   //Language Setup
-
   final List<String> languages = [
-    'English',
-    'Spanish'
+    'English (India)',
+    'हिन्दी (Hindi)',
+    'বাংলা (Bengali)',
+    'தமிழ் (Tamil)',
+    'తెలుగు (Telugu)',
+    'मराठी (Marathi)',
+    'ಕನ್ನಡ (Kannada)',
+    'English'
   ];
 
   

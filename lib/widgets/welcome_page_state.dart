@@ -6,19 +6,19 @@ import 'slider_item_widget.dart';
 class WelcomePageState extends State<WelcomePage> {
   List<SliderItem> sliderItems = [
     SliderItem(
-      imageUrl: "https://i.pinimg.com/564x/01/45/35/014535c9bdb94a079a51fc5e6bfd7c7e.jpg",
+      imageUrl: "https://i.pinimg.com/564x/01/45/35/014535c9bdb94a079a51fc5e6bfd7c7e.png",
       title: "lali",
       subtitle: "Explore",
       index: 0,
     ),
     SliderItem(
-      imageUrl: "https://i.pinimg.com/564x/a1/76/73/a176734e7a6a6a81c58c871607a92536.jpg",
+      imageUrl: "https://i.pinimg.com/564x/a1/76/73/a176734e7a6a6a81c58c871607a92536.png",
       title: "lali",
       subtitle: "Hotel Booking",
       index: 1,
     ),
     SliderItem(
-      imageUrl: "https://i.pinimg.com/564x/77/52/b9/7752b963771e7a6b80f8348ba807e27c.jpg",
+      imageUrl: "https://i.pinimg.com/564x/77/52/b9/7752b963771e7a6b80f8348ba807e27c.png",
       title: "lali",
       subtitle: "Grab Your Foods",
       index: 2,

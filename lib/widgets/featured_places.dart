@@ -2,12 +2,12 @@ import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:provider/provider.dart';
-import '/blocs/featured_bloc.dart';
-import '/models/place.dart';
-import '/pages/place_details.dart';
-import '/core/utils/next_screen.dart';
-import '/widgets/custom_cache_image.dart';
-import '/core/utils/loading_cards.dart';
+import '../blocs/featured_bloc.dart';
+import '../models/place.dart';
+import '../pages/place_details.dart';
+import '../core/utils/next_screen.dart';
+import '../widgets/custom_cache_image.dart';
+import '../core/utils/loading_cards.dart';
 
 
 

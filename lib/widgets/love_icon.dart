@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import '/blocs/sign_in_bloc.dart';
-import '/models/icon_data.dart';
+import '../blocs/sign_in_bloc.dart';
+import '../models/icon_data.dart';
 import 'package:provider/provider.dart';
 
 

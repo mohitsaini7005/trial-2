@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:html/parser.dart';
 import 'package:html_unescape/html_unescape.dart';
 import 'package:provider/provider.dart';
-import '/blocs/blog_bloc.dart';
-import '/models/blog.dart';
-import '/pages/blog_details.dart';
-import '/core/utils/next_screen.dart';
-import '/widgets/custom_cache_image.dart';
-import '/core/utils/loading_cards.dart';
+import '../blocs/blog_bloc.dart';
+import '../models/blog.dart';
+import '../pages/blog_details.dart';
+import '../core/utils/next_screen.dart';
+import '../widgets/custom_cache_image.dart';
+import '../core/utils/loading_cards.dart';
 import 'package:easy_localization/easy_localization.dart';
 
 class BlogPage extends StatefulWidget {

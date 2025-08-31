@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:lali/pages/home.dart';
-import '/blocs/sign_in_bloc.dart';
-import '/core/config/config.dart';
-import '/pages/sign_in.dart';
-//import '/pages/home.dart';
-import '/core/utils/next_screen.dart';
+import '../blocs/sign_in_bloc.dart';
+import '../core/config/config.dart';
+import '../pages/sign_in.dart';
+//import '../pages/home.dart';
+import '../core/utils/next_screen.dart';
 
 
 

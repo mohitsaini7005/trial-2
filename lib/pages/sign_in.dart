@@ -3,13 +3,13 @@ import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import 'package:lali/view/login/login.dart';
 import 'package:lali/widgets/button.dart';
-import '/blocs/internet_bloc.dart';
-import '/blocs/sign_in_bloc.dart';
-import '/core/config/config.dart';
-import '/pages/done.dart';
-import '/core/utils/next_screen.dart';
+import '../blocs/internet_bloc.dart';
+import '../blocs/sign_in_bloc.dart';
+import '../core/config/config.dart';
+import '../pages/done.dart';
+import '../core/utils/next_screen.dart';
 import 'package:easy_localization/easy_localization.dart';
-import '/widgets/language.dart';
+import '../widgets/language.dart';
 
 
 

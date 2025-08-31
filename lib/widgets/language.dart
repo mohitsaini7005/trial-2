@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
-import '/core/config/config.dart';
+import '../core/config/config.dart';
 
 class LanguagePopup extends StatefulWidget {
   const LanguagePopup({ super.key });
@@ -34,11 +34,31 @@ class _LanguagePopupState extends State<LanguagePopup> {
           leading: const Icon(Icons.language),
           title: Text(d),
           onTap: () async{
-            if(index == 0){
-              await context.setLocale(const Locale('en'));
-            }
-            else {
-              await context.setLocale(const Locale('es'));
+            switch(index) {
+              case 0:
+                await context.setLocale(const Locale('en', 'IN'));
+                break;
+              case 1:
+                await context.setLocale(const Locale('hi', 'IN'));
+                break;
+              case 2:
+                await context.setLocale(const Locale('bn', 'IN'));
+                break;
+              case 3:
+                await context.setLocale(const Locale('ta', 'IN'));
+                break;
+              case 4:
+                await context.setLocale(const Locale('te', 'IN'));
+                break;
+              case 5:
+                await context.setLocale(const Locale('mr', 'IN'));
+                break;
+              case 6:
+                await context.setLocale(const Locale('kn', 'IN'));
+                break;
+              default:
+                await context.setLocale(const Locale('en'));
+                break;
             }
             if (!mounted) return;
             Navigator.pop(context);

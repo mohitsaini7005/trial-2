@@ -6,9 +6,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_html/flutter_html.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import '/models/notification.dart';
-import '/pages/notifications.dart';
-import '/core/utils/next_screen.dart';
+import '../models/notification.dart';
+import '../pages/notifications.dart';
+import '../core/utils/next_screen.dart';
 
 class NotificationBloc extends ChangeNotifier {
   final FirebaseFirestore firestore = FirebaseFirestore.instance;

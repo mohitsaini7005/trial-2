@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import '/models/state.dart';
+import '../models/state.dart';
 
 class StateBloc extends ChangeNotifier {
 

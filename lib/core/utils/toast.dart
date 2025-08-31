@@ -5,11 +5,9 @@ import 'package:toast/toast.dart';
 void openToast(context, message){
   Toast.show(
     message, 
-    textStyle: context, 
-    webTexColor: Colors.white, 
-    backgroundRadius: 20, 
-    duration: Toast.lengthShort
-    );
+    duration: Toast.lengthShort,
+    gravity: Toast.bottom,
+  );
 }
 
 
@@ -17,9 +15,7 @@ void openToast(context, message){
 void openToast1(context, message){
   Toast.show(
     message, 
-    textStyle: context, 
-    webTexColor: Colors.white, 
-    backgroundRadius: 20, 
-    duration: Toast.lengthLong
+    duration: Toast.lengthLong,
+    gravity: Toast.bottom,
   );
 }

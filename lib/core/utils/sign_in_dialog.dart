@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lali/core/utils/next_screen.dart';
-import '/pages/sign_in.dart';
+import '../pages/sign_in.dart';
 import 'package:easy_localization/easy_localization.dart';
 
 openSignInDialog(context){

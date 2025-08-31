@@ -1,8 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import '/core/config/config.dart';
-import '/models/place.dart';
+import '../core/config/config.dart';
+import '../models/place.dart';
 
 class SpecialStateOneBloc extends ChangeNotifier{
 

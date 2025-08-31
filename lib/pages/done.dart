@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '/pages/intro.dart';
-import '/core/utils/next_screen.dart';
+import '../pages/intro.dart';
+import '../core/utils/next_screen.dart';
 
 class DonePage extends StatefulWidget {
   const DonePage({super.key});

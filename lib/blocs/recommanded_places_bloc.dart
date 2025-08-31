@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import '/models/place.dart';
+import '../models/place.dart';
 import 'package:lali/core/services/region_prefs.dart';
 import 'package:firebase_remote_config/firebase_remote_config.dart';
 

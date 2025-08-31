@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:provider/provider.dart';
-import '/blocs/internet_bloc.dart';
-import '/blocs/sign_in_bloc.dart';
+import '../blocs/internet_bloc.dart';
+import '../blocs/sign_in_bloc.dart';
 import 'package:easy_localization/easy_localization.dart';
 
 class EditProfile extends StatefulWidget {
