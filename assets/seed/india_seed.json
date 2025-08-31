@@ -1,0 +1,36 @@
+{
+  "states": [
+    { "code": "DL", "name_en": "Delhi", "name_hi": "दिल्ली", "country": "IN" },
+    { "code": "MH", "name_en": "Maharashtra", "name_hi": "महाराष्ट्र", "country": "IN" },
+    { "code": "WB", "name_en": "West Bengal", "name_hi": "पश्चिम बंगाल", "country": "IN" },
+    { "code": "TN", "name_en": "Tamil Nadu", "name_ta": "தமிழ்நாடு", "country": "IN" }
+  ],
+  "tribes": [
+    { "id": "gond", "name_en": "Gond", "states": ["MH", "MP", "CG"], "country": "IN" },
+    { "id": "santhal", "name_en": "Santhal", "states": ["WB", "JH", "OD"], "country": "IN" }
+  ],
+  "festivals": [
+    { "id": "durga_puja", "name_en": "Durga Puja", "month": 10, "states": ["WB"], "country": "IN" },
+    { "id": "pongal", "name_en": "Pongal", "month": 1, "states": ["TN"], "country": "IN" }
+  ],
+  "places": [
+    {
+      "id": "india_gate",
+      "name_en": "India Gate",
+      "state": "DL",
+      "country": "IN",
+      "lat": 28.612912,
+      "lng": 77.229509,
+      "category": "monument"
+    },
+    {
+      "id": "marine_drive",
+      "name_en": "Marine Drive",
+      "state": "MH",
+      "country": "IN",
+      "lat": 18.9430,
+      "lng": 72.8238,
+      "category": "promenade"
+    }
+  ]
+}

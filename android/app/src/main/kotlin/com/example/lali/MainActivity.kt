@@ -1,0 +1,1 @@
+package com.example.lali io.flutter.embedding.android.FlutterActivityclass MainActivity: FlutterActivity() {}

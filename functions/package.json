@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "lali-functions",
+  "engines": { "node": "^18" },
+  "scripts": {
+    "build": "echo 'No build step'",
+    "deploy": "firebase deploy --only functions"
+  },
+  "dependencies": {
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.0.0"
+  }
+}

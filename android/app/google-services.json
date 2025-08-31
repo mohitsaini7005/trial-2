@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "791241718220",
+    "project_id": "lali-faef2",
+    "storage_bucket": "lali-faef2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:791241718220:android:8522321736eb24874e4569",
+        "android_client_info": {
+          "package_name": "com.example.lali"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "791241718220-cdctonjh7tsncqm1o6iau3nbkt9tmj0g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDn4eI6Tx_yvXfdvBe3aJ0pz2egy9fREo8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "791241718220-cdctonjh7tsncqm1o6iau3nbkt9tmj0g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

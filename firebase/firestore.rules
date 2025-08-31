@@ -1,0 +1,89 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function userDoc(uid) {
+      return get(/databases/$(database)/documents/users/$(uid));
+    }
+
+    function role(uid) {
+      return userDoc(uid).data.role;
+    }
+
+    function isAdmin() {
+      return isSignedIn() && role(request.auth.uid) == 'admin';
+    }
+
+    function isCreator() {
+      return isSignedIn() && (
+        role(request.auth.uid) == 'creator' || role(request.auth.uid) == 'admin'
+      );
+    }
+
+    // Helper: ensure resource has ownerId equal to current user for create/update
+    function isOwner() {
+      return isSignedIn() && request.resource.data.ownerId == request.auth.uid;
+    }
+
+    // Helper: on update, ensure ownerId cannot be changed
+    function ownerUnchanged() {
+      return resource.data.ownerId == request.resource.data.ownerId;
+    }
+
+    // Helper: whitelist allowed fields for a collection
+    function onlyAllowedFields(allowed) {
+      return request.resource.data.diff(resource.data).changedKeys().hasOnly(allowed);
+    }
+
+    // Users can read their own profile; only admin can write arbitrary.
+    match /users/{uid} {
+      allow read: if isSignedIn() && request.auth.uid == uid;
+      allow write: if isAdmin() || (isSignedIn() && request.auth.uid == uid);
+    }
+
+    // Places are publicly readable; writes limited to creators/admins.
+    match /places/{placeId} {
+      allow read: if true;
+      // Create: creator/admin and ownerId must be self
+      allow create: if isCreator() && isOwner();
+      // Update: creator/admin and ownerId cannot change; restrict fields
+      allow update: if isCreator() && ownerUnchanged() && onlyAllowedFields([
+        'title', 'subtitle', 'description', 'images', 'country', 'state', 'loves', 'timestamp', 'coords', 'tags', 'ownerId'
+      ]);
+      // Delete: creator/admin and must be owner or admin
+      allow delete: if isAdmin() || (isCreator() && resource.data.ownerId == request.auth.uid);
+    }
+
+    // States/tribes/festivals can be read by anyone; creators/admins manage.
+    match /{colName}/{docId} where colName in ['states','tribes','festivals'] {
+      allow read: if true;
+      allow create: if isCreator();
+      allow update: if isCreator();
+      allow delete: if isCreator();
+    }
+
+    // Comments are readable; users can write their own; creators/admins moderate.
+    match /comments/{commentId} {
+      allow read: if true;
+      // Create: must set uid to self, and prevent spoofed writes
+      allow create: if isSignedIn() && request.resource.data.uid == request.auth.uid;
+      // Update: user can edit their comment text only; admin/creator can moderate
+      allow update: if isAdmin() || (
+        isSignedIn() && request.auth.uid == resource.data.uid && request.resource.data.diff(resource.data).changedKeys().hasOnly(['text','updatedAt'])
+      );
+      // Delete: admin or author
+      allow delete: if isAdmin() || (isSignedIn() && request.auth.uid == resource.data.uid);
+    }
+
+    // Default deny
+    match /{document=**} {
+      allow read: if false;
+      allow write: if false;
+    }
+  }
+}
+
