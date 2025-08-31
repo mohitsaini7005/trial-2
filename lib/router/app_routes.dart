@@ -15,6 +15,10 @@ import 'package:lali/pages/food_accommodation/food_accommodation_page.dart';
 import 'package:lali/pages/marketplace/marketplace_page.dart';
 import 'package:lali/pages/blogs/blogs_page.dart';
 import 'package:lali/pages/profile/profile_page.dart';
+import 'package:lali/pages/social/social_feed_page.dart';
+import 'package:lali/pages/trips/trips_booking_page.dart';
+import 'package:lali/pages/admin/admin_dashboard_page.dart';
+import 'package:lali/services/ai_travel_assistant.dart';
 import 'package:lali/home.dart';
 
 class AppRoutes {
@@ -41,6 +45,12 @@ class AppRoutes {
   static String blogs = '/blogs';
   static String profile = '/profile';
   static String home = '/';
+  
+  // New SaaS features
+  static String socialFeed = '/social';
+  static String tripsBooking = '/trips';
+  static String aiAssistant = '/ai-assistant';
+  static String adminDashboard = '/admin';
 
   static List<GetPage> pages = [
     GetPage(
@@ -110,6 +120,24 @@ class AppRoutes {
     GetPage(
       name: home,
       page: () => const Home(),
+    ),
+    
+    // New SaaS Features
+    GetPage(
+      name: socialFeed,
+      page: () => const SocialFeedPage(),
+    ),
+    GetPage(
+      name: tripsBooking,
+      page: () => const TripsBookingPage(),
+    ),
+    GetPage(
+      name: aiAssistant,
+      page: () => const AIChatWidget(),
+    ),
+    GetPage(
+      name: adminDashboard,
+      page: () => const AdminDashboardPage(),
     ),
   ];
 }
