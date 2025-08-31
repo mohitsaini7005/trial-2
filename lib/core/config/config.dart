@@ -39,10 +39,15 @@ class Config {
 
   
   //Language Setup
-
   final List<String> languages = [
-    'English',
-    'Spanish'
+    'English (India)',
+    'हिन्दी (Hindi)',
+    'বাংলা (Bengali)',
+    'தமிழ் (Tamil)',
+    'తెలుగు (Telugu)',
+    'मराठी (Marathi)',
+    'ಕನ್ನಡ (Kannada)',
+    'English'
   ];
 
   

@@ -96,12 +96,12 @@ void main() async {
   runApp(EasyLocalization(
     supportedLocales: const [
       Locale('en', 'IN'), // English (India) default
-      Locale('hi'), // Hindi
-      Locale('bn'), // Bengali
-      Locale('ta'), // Tamil
-      Locale('te'), // Telugu
-      Locale('mr'), // Marathi
-      Locale('kn'), // Kannada
+      Locale('hi', 'IN'), // Hindi (India)
+      Locale('bn', 'IN'), // Bengali (India)
+      Locale('ta', 'IN'), // Tamil (India)
+      Locale('te', 'IN'), // Telugu (India)
+      Locale('mr', 'IN'), // Marathi (India)
+      Locale('kn', 'IN'), // Kannada (India)
       Locale('en'), // Fallback English
     ],
     path: 'assets/translations',

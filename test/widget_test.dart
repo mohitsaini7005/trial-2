@@ -27,11 +27,20 @@ void main() {
     // Pump the app wrapped with EasyLocalization, matching production setup
     await tester.pumpWidget(
       EasyLocalization(
-        supportedLocales: const [Locale('en'), Locale('es')],
+        supportedLocales: const [
+          Locale('en', 'IN'), // English (India) default
+          Locale('hi', 'IN'), // Hindi (India)
+          Locale('bn', 'IN'), // Bengali (India)
+          Locale('ta', 'IN'), // Tamil (India)
+          Locale('te', 'IN'), // Telugu (India)
+          Locale('mr', 'IN'), // Marathi (India)
+          Locale('kn', 'IN'), // Kannada (India)
+          Locale('en'), // Fallback English
+        ],
         path: 'assets/translations',
-        fallbackLocale: const Locale('en'),
-        startLocale: const Locale('en'),
-        useOnlyLangCode: true,
+        fallbackLocale: const Locale('en', 'IN'),
+        startLocale: const Locale('en', 'IN'),
+        useOnlyLangCode: false,
         child: const MyApp(),
       ),
     );
